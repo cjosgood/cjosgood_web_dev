@@ -1,1 +1,1 @@
-# cjosgood_web_dev
+This repo will consist of all my Web Dev projects.
