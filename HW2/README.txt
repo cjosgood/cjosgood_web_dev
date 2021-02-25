@@ -1,3 +1,6 @@
+This is an interactive game in HTML and uses CSS to style it.
+
+
 The assets I have used are linked below.
 
 Images
