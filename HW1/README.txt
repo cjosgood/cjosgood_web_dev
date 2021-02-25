@@ -1,3 +1,6 @@
+This is an interactive game created with HTML. 
+
+
 The assets I have used are linked below.
 
 Images
