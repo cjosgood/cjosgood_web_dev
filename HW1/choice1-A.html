@@ -1,0 +1,49 @@
+<!-- This is the view for Choice 1: Decision A -->
+
+<html>
+    <head>
+        <title> The House in the Woods </title>
+        <link rel="icon" href="assets/logo.jpg" >
+        <script>
+            function inputController() {
+                if (option1.checked && option2.checked) {
+                    parent.location='lose.html';
+                }
+                else if (option1.checked) {
+                    parent.location='choice2-A.html';
+                }
+                else if (option2.checked) {
+                    parent.location='choice2-B.html'
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> You arrive at the door of the house. </h1>
+        <img src='assets/inside-house.jpg' width='500'>
+        <p>
+            Everyone forces you to open the door. As you do, the door loudly opens.
+        </p>
+
+        <audio controls>
+            <source src="assets/door-creaking.mp3">
+        </audio>
+
+        <p> 
+            The place is a mess, but your friends want to explore.
+            They quickly realize there is an upstairs.
+        </p>
+
+        <div>
+            <label>Who do you decide to go with? CHOOSE ONLY ONE.</label>
+            <br>
+            <input type="checkbox" id='option1' name='input-name' value='option1'>
+            <label>Go with Chad and Jessica upstairs</label>
+            <br>
+            <input type="checkbox" id='option2' name='input-name' value='option2'>
+            <label>Stay with Eric and Samantha on the first floor</label>
+            <br>
+            <input type="button" onclick="inputController()" value='Submit' >
+        </div>
+    </body>
+</html>

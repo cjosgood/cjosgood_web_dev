@@ -1,0 +1,54 @@
+<!-- This is the view for Choice 3: Decision B -->
+<html>
+    <head>
+        <title> The House in the Woods </title>
+        <link rel="icon" href="assets/logo.jpg" >
+        <script>
+            function inputController() {
+                if (input1.value == '427386') {
+                    parent.location='success.html';
+                }
+                else {
+                    parent.location='choice4-A.html';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Jackpot! </h1>
+        <p>
+            Behind the painting, you find a safe in the wall.
+        </p>
+        <code>
+            This has to be what these numbers belong to!
+        </code>
+
+        <table border="5">
+            <tr>
+                <td> 1 </td>
+                <td> 2 </td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td> 5 </td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <td> 7 </td>
+                <td> 8 </td>
+                <td> 9 </td>
+            </tr>
+        </table>
+
+        <p>
+           You enter the combination into the keypad: 427386. 
+        </p>
+
+        <div>
+            <label>Combination:</label>
+            <input type="text" id='input1'>
+            <input type="button" value='Submit' onclick="inputController()">
+        </div>
+    </body>
+</html>
